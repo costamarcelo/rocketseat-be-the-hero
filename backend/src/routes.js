@@ -7,19 +7,19 @@ const SessionController = require('./controllers/SessionController');
 
 const routes = express.Router();
 
+/*Rota para LOGIN na aplicação */
 routes.post('/sessions', SessionController.create);
 
 /*Rota de Listagem e de inserção de Ongs */
 routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.create);
 
+/*Rota de Listagem de ONG específica */
 routes.get('/profile', ProfileController.index);
 
 /*Rota de Listagem e de inserção de incidentes */
 routes.get('/incidents', IncidentController.index);
 routes.post('/incidents', IncidentController.create);
 routes.delete('/incidents/:id', IncidentController.delete);
-
-
 
 module.exports = routes;

@@ -1,6 +1,7 @@
 const connection = require('../database/connection');
 
 module.exports = {
+    /*--Listagem com paginação--*/
     async index(request, response){
         const { page = 1 } = request.query;
 
@@ -27,6 +28,7 @@ module.exports = {
         return response.json(incidents);
     },
 
+    /*--Inserção--*/
     async create(request, response){
         const { title, description, value } = request.body;
         const ong_id = request.headers.authorization;
@@ -40,6 +42,7 @@ module.exports = {
         return response.json({ id });
     },
     
+    /*--Delete--*/
     async delete(request, response){
         const { id } = request.params;
         const ong_id = request.headers.authorization;

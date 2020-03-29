@@ -1,6 +1,7 @@
 const connection = require('../database/connection');
 
 module.exports = {
+    /*--Listagem de ONG específica buscando pelo Id da ONG--*/
     async index(request, response) {
         const ong_id = request.headers.authorization;
 

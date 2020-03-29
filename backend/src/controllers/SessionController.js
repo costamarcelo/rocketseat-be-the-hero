@@ -1,6 +1,7 @@
 const connection = require('../database/connection');
 
 module.exports = {
+    /*--Não é uma inserção, mas envio para login--*/
     async create(request, response) {
         const {id} = request.body;
 
