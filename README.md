@@ -1,6 +1,7 @@
 ## Be The Hero
 
-Projeto desenvolvido durante a 11ª semana Omnistack da [RocketSeat](https://rocketseat.com.br/). **Instrutor:** [Diego Fernandes](https://github.com/diego3g)
+Projeto desenvolvido durante a 11ª semana Omnistack da [RocketSeat](https://rocketseat.com.br/). 
+**Instrutor:** [Diego Fernandes](https://github.com/diego3g)
 
 ### License
 
